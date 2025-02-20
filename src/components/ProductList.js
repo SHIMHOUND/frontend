@@ -6,7 +6,7 @@ const ProductList = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        axios.get('http://localhost:8005/api/v1/products/')
+        axios.get('https://localhost:8005/api/v1/products/')
             .then(response => {
                 setProducts(response.data);
             })
